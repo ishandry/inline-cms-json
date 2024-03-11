@@ -1,0 +1,19 @@
+{
+  "name": "inline-cms-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "bin": {
+    "cmsjson": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishandry/inline-cms-json.git"
+  },
+  "keywords": ["inline-cms-json", "cms-json", "cms", "inline cms json", "inline cms", "cms json"],
+  "author": "ishandry",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
