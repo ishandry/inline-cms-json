@@ -4,6 +4,7 @@ const fs = require("fs");
 const { getCurrentState } = require("../lib/state");
 const { newArticleSource } = require("../lib/article");
 const { buildInputs } = require("../lib/build");
+const { whiteSpaces } = require("../lib/whitespaces");
 
 
 const commandParameter = process.argv[2];
@@ -19,11 +20,7 @@ if (commandParameter === "build") {
     buildInputs();
 }
 
-// fs.writeFile(filePath, jsonString, (err) => {
-//   if (err) {
-//     console.error("Error writing JSON file:", err);
-//   } else {
-//     console.log("JSON file has been created successfully.");
-//   }
-// });
+if (commandParameter === "whitespace") {
+    whiteSpaces(process.argv[3]);
+}
 
